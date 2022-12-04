@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Panier</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" />
+    <link rel="stylesheet" href="../css/styles.css"/>
+    <!-- JavaScripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/7c1a2d2091.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <div class="row">
+          <a class="navbar-brand col " href="#">
+            <img src="lego.jpg" alt="Logo" width="70px" height="40px">
+            WebStore
+          </a>
+          <ul class="navbar-nav col ">
+            <li class="nav-item ">
+              <a href="produit.html" class="nav-link">Produits</a>
+            </li>
+            <li class="nav-item">
+              <a href="panier.html" class="nav-link">Panier</a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="compte.html" class="btn btn-outline-secondary" tabindex="-1" role="button" aria-disabled="true"><i class="fa-solid fa-user"></i> Compte</a>
+        
+      </div>
+    </nav>
+    
+    <section>
+      <div class="row m-5 d-flex justify-content-center">
+        <div class="col-4">
+          <ul class=" list-group">
+            <li class="list-group-item">
+              <div class="d-flex justify-content-between">
+                <div><img src="produit_newyork_0.jpeg" width="100px" height="100px"></div>
+                <div>
+                  <p>Lego Architecture <br>
+                  <span id="boldd"> New York City</span> <br>
+                  Quantité : 1</p>
+                </div>
+                <div>
+                  <h1>49,99£</h1><br>
+                  <button type="button" class="btn btn-outline-danger">Supprimer <i class="fa-solid fa-trash-can"></i></button>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex justify-content-between">
+                <div><img src="produit_newyork_0.jpeg" width="100px" height="100px"></div>
+                <div>
+                  <p>Lego Architecture <br>
+                  <span id="boldd"> Londres</span> <br>
+                  Quantité : 3</p>
+                </div>
+                <div>
+                  <h1>49,99£</h1><br>
+                  <button type="button" class="btn btn-outline-danger">Supprimer <i class="fa-solid fa-trash-can"></i></button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-4">
+          <H2>Panier</H2>
+          <table class="table">
+            <tr>
+              <th>Prix du panier</th>
+              <th id="money">99,98 £</th>
+            </tr>
+            <tr>
+              <th>TVA (15%)</th>
+              <th id="money">15 £</th>
+            </tr>
+            <tr >
+              <th id="total">Total</th>
+              <th id="total1">114.98 £</th>
+            </tr>
+          </table>
+          <div class="d-flex flex-row-reverse">
+          <button type="button" class="btn btn-primary">Acheter <i class="fa-solid fa-check " id="monta"></i></button></div>
+        </div>
+      </div>
+    </section>
+    
+    <hr class="mx-5">
+    <section>
+      <div class="mx-5 d-flex justify-content-between">
+        <div>
+          <h3>LEGO WebStore</h3>
+          <p id="parag">Maison de la Recherche Blaise Pascal <br>
+          50 rue Ferdinand Buisson <br>
+          62228, Calais</p>
+        </div>
+        <div>
+          <img id="legoo" src="lego.jpg" alt="" width="100px" height="100px">
+          <p id="web" class="text-center">WebStore</p>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>
